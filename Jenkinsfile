@@ -23,7 +23,7 @@ node {
     }
 
     stage('Build Docker Image') {
-        buildImage = docker.build("HaesikRyu/spring-cloud-config:${commitHash}")
+        buildImage = docker.build("hsryu/spring-cloud-config:${commitHash}")
     }
 
     stage('Archive') {
