@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk-alpine
-MAINTAINER haesiku@gmail.com
+LABEL MAINTAINER = "haesiku@gmail.com"
 VOLUME /tmp
 ADD ./build/libs/app.jar app.jar
 EXPOSE 8888
